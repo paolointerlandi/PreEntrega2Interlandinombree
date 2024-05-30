@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap');
+
+/* Reset */
+* {
+    font-family: "Sedan SC", sans-serif;
+    font-optical-sizing: auto;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Helvetica Neue', sans-serif; 
+    background-color: #f8f8f8; 
+    color: #333;
+    line-height: 1.6;
+}
+
+.hero {
+    background-image: url(../assets/sound-recording-hero.jpg);
+    height: 84.5vh;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Header Styles */
+.navbar {
+    background-color: #60c87e !important; 
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #333; 
+    font-size: 24px;
+}
+
+.navbar-brand:hover {
+    color: #333 !important; 
+}
+
+.nav-link {
+    color: #555 !important; 
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #333 !important; 
+}
+
+/* Custom utility class for border-bottom */
+.border-bottom-custom {
+    border-bottom: 2px solid #dddddd !important;
+}
+
+/* Custom utility class for box-shadow */
+.box-shadow-custom {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Center the nav items in the collapsed navbar */
+@media (max-width: 991.98px) {
+    .centered-nav {
+        text-align: center;
+    }
+    .centered-nav .navbar-nav {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .centered-nav .nav-item {
+        margin: 0.2rem 0; /* Reduced spacing between items */
+    }
+    .centered-nav .nav-link {
+        padding: 0.5rem 0; /* Reduced padding for nav links */
+    }
+}
+
+/* Main Content Styles */
+h2 {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    color: #333;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+/* Card Styles */
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.hover-shadow {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.hover-shadow:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    margin-top: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Form Styles */
+.form-label {
+    font-weight: bold;
+}
+
+/* Footer Styles */
+footer {
+    margin-top: 0;
+    background-color: #f8f8f8; 
+    color: #555; 
+    padding: 20px 0;
+}
+
+.footer-center a {
+    margin-right: 20px;
+}
+
+.footer-center img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 10px;
+    }
+}
